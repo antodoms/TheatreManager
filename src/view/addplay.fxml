@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="commonPane" prefHeight="429.0" prefWidth="580.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.PlayController">
+   <children>
+      <Label layoutX="191.0" layoutY="36.0" text="New Play">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="114.0" text="Title" />
+      <TextField fx:id="playtitle" layoutX="246.0" layoutY="109.0" />
+      <Label layoutX="130.0" layoutY="164.0" text="Description" />
+      <TextField fx:id="playdescription" layoutX="246.0" layoutY="159.0" />
+      <Label layoutX="130.0" layoutY="220.0" text="Price" />
+      <TextField fx:id="playprice" layoutX="246.0" layoutY="215.0" />
+      <Label layoutX="130.0" layoutY="269.0" text="Play Type" />
+      <ChoiceBox fx:id="playtype" layoutX="246.0" layoutY="264.0" prefHeight="27.0" prefWidth="167.0" />
+      <Button layoutX="248.0" layoutY="318.0" mnemonicParsing="false" onAction="#AddPlay" text="Add" />
+   </children>
+</AnchorPane>

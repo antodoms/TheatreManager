@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="commonPane" prefHeight="378.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MemberController">
+   <children>
+   	  <Label layoutX="126.0" layoutY="69.0" text="Full Name" />
+      <TextField fx:id="userName" layoutX="279.0" layoutY="64.0" />
+   	  <Label layoutX="126.0" layoutY="107.0" text="Age" />
+      <TextField fx:id="userAge" layoutX="279.0" layoutY="102.0" />
+      <Label layoutX="125.0" layoutY="150.0" text="Username" />
+      <TextField fx:id="userLogin" layoutX="279.0" layoutY="145.0" />
+      <Label layoutX="126.0" layoutY="190.0" text="Password" />
+      <PasswordField fx:id="userPass" layoutX="279.0" layoutY="185.0" />
+      <Button layoutX="370.0" layoutY="306.0" mnemonicParsing="false" onAction="#addUser" text="Add User" />
+      <Label layoutX="122.0" layoutY="234.0" text="Select Plan" />
+      <ChoiceBox fx:id="selectplan" layoutX="279.0" layoutY="229.0" prefHeight="27.0" prefWidth="167.0" />
+      <TextField fx:id="reference" layoutX="122.0" layoutY="306.0" prefHeight="27.0" prefWidth="184.0" promptText="ID of Refered User" />
+   </children>
+</AnchorPane>
